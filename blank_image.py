@@ -13,4 +13,7 @@ cv.imshow("image with rectangular",blank)
 #draw a circle
 cv.circle(blank,(250,250),20,(100,182,250),thickness=2)
 cv.imshow("image with circle",blank)
+#draw a line
+cv.line(blank,(120,170),(220,230),(50,80,100),thickness=2)
+cv.imshow("image with line",blank)
 cv.waitKey(0)
