@@ -14,6 +14,9 @@ cv.imshow("image with rectangular",blank)
 cv.circle(blank,(250,250),20,(100,182,250),thickness=2)
 cv.imshow("image with circle",blank)
 #draw a line
-cv.line(blank,(120,170),(220,230),(50,80,100),thickness=2)
+cv.line(blank,(blank.shape[0]//2,blank.shape[1]//2),(220,230),(50,80,100),thickness=2)
 cv.imshow("image with line",blank)
+#write a text
+cv.putText(blank,"I am more than diamond",(0,255),cv.FONT_HERSHEY_PLAIN,1,color=(20,80,250), thickness=2)
+cv.imshow("image with text",blank)
 cv.waitKey(0)
